@@ -70,6 +70,25 @@
 | `ds`     | delete surrounding |
 
 
+### rest.vim - https://github.com/rest-nvim/rest.nvim
+
+- Reference: https://github.com/rest-nvim/rest.nvim/tree/main/tests
+
+| mappings    | Description          |
+|-------------|----------------------|
+| `<leader>r` | Run rest API         |
+| `<leader>p` | Run the preview      |
+| `<leader>l` | Run the last command |
+
+
+### nvim-tree - https://github.com/nvim-tree/nvim-tree.lua
+
+| mappings | Description |
+|----------|-------------|
+| `g?`     | Help        |
+| `c`      | Copy file   |
+| `p`      | Paste file  |
+
 
 ## tmux
 

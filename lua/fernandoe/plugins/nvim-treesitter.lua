@@ -15,6 +15,7 @@ return {
                 "dockerfile",
                 "gitignore",
                 "html",
+                "http",
                 "javascript",
                 "json",
                 "lua",
