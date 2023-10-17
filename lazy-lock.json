@@ -46,6 +46,7 @@
   "trouble.nvim": { "branch": "main", "commit": "3f85d8ed30e97ceeddbbcf80224245d347053711" },
   "vim-fubitive": { "branch": "master", "commit": "c85ca8fa2098aa05e816f5d0839a0dad6bfcca5a" },
   "vim-fugitive": { "branch": "master", "commit": "99db68d9b3304580bd383da7aaee05c7a954a344" },
+  "vim-highlightedyank": { "branch": "master", "commit": "fa3f57b097e9521ce41a66b6c7cf5d9adea70ea3" },
   "vim-illuminate": { "branch": "master", "commit": "1b5d70332a51a1de05f281069851865a2bb1e6d7" },
   "vim-markdown": { "branch": "master", "commit": "4e9b4deda11d05a157ab34e97f76089669b5b7af" },
   "vim-maximizer": { "branch": "master", "commit": "2e54952fe91e140a2e69f35f22131219fcd9c5f1" },
