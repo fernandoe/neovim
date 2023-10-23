@@ -90,6 +90,16 @@
 | `p`      | Paste file  |
 
 
+### undotree - https://github.com/mbbill/undotree
+
+| mappings          | Description                    |
+|-------------------|--------------------------------|
+| `:UndotreeToggle` | Close/Open the undotree panel  |
+| `<leader>u`       | Close/Open the undotree panel  |
+| `u`               | Undo change                    |
+| `<C-r>`           | Redo changes which were undone |
+
+
 ## tmux
 
 
