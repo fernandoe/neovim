@@ -103,17 +103,19 @@
 ## tmux
 
 
-| Keys             | Description                   |
-|------------------|-------------------------------|
-| `<leader>s`      | List all sessions             |
-| `<leader>d`      | Detach the current session    |
-| `<leader>%`      | Panes: Split vertically       |
-| `<leader>"`      | Panes: Split horizontally     |
-| `<leader>z`      | Panes: Maximize/Minimize pane |
-| `<leader>o`      | Panes: Cycle focus            |
-| `<leader>Arrows` | Panes: Cycle pane focus       |
-| `<leader>x`      | Panes: Close pane             |
-| `<leader>c`      | Windows: New window           |
-| `<leader>,`      | Windows: Rename window        |
-| `<leader>n`      | Windows: Cycle focus          |
-| `<leader>&`      | Windows: Close focus          |
+| Keys             | Description                                     |
+|------------------|-------------------------------------------------|
+| `<prefix>+I`     | (capital i, as in Install) to fetch the plugin  |
+| `<prefix>+U`     | updates plugin(s)                               |
+| `<leader>s`      | List all sessions                               |
+| `<leader>d`      | Detach the current session                      |
+| `<leader>%`      | Panes: Split vertically                         |
+| `<leader>"`      | Panes: Split horizontally                       |
+| `<leader>z`      | Panes: Maximize/Minimize pane                   |
+| `<leader>o`      | Panes: Cycle focus                              |
+| `<leader>Arrows` | Panes: Cycle pane focus                         |
+| `<leader>x`      | Panes: Close pane                               |
+| `<leader>c`      | Windows: New window                             |
+| `<leader>,`      | Windows: Rename window                          |
+| `<leader>n`      | Windows: Cycle focus                            |
+| `<leader>&`      | Windows: Close focus                            |
