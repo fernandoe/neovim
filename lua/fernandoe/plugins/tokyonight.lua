@@ -1,6 +1,12 @@
 return {
-    "https://github.com/folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
+  "https://github.com/folke/tokyonight.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {
+    transparent = true,
+    styles = {
+      sidebars = "transparent",
+      floats = "transparent",
+    },
+  },
 }
