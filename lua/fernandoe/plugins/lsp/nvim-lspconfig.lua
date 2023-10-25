@@ -19,17 +19,19 @@ return {
       },
     })
 
-    require("lspconfig").tsserver.setup({})
+    local lspconfig = require("lspconfig")
 
-    require("lspconfig").docker_compose_language_service.setup({})
+    lspconfig.tsserver.setup({})
 
-    require("lspconfig").jedi_language_server.setup({})
+    lspconfig.docker_compose_language_service.setup({})
 
-    require("lspconfig").bashls.setup({})
+    lspconfig.pyright.setup({})
 
-    require("lspconfig").marksman.setup({})
+    lspconfig.bashls.setup({})
 
-    require("lspconfig").html.setup({
+    lspconfig.marksman.setup({})
+
+    lspconfig.html.setup({
       filetypes = { "html", "htmldjango" },
     })
   end,

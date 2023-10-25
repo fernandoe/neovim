@@ -10,9 +10,9 @@ return {
             "cssls",
             "docker_compose_language_service",
             "html",
-            "jedi_language_server",
             "lua_ls",
             "marksman",  -- Markdown
+            "pyright",
             "tailwindcss",
             "terraformls",
             "tflint",
