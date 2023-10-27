@@ -4,6 +4,7 @@ return {
   dependencies = {
     "https://github.com/hrsh7th/cmp-buffer",
     "https://github.com/hrsh7th/cmp-path",
+    "https://github.com/hrsh7th/cmp-cmdline",
     "https://github.com/L3MON4D3/LuaSnip",
     "https://github.com/hrsh7th/cmp-nvim-lua",
     "https://github.com/hrsh7th/cmp-nvim-lsp",
@@ -58,6 +59,20 @@ return {
           ellipsis_char = "...",
         }),
       },
+    })
+    cmp.setup.cmdline({ "/", "?" }, {
+      mapping = cmp.mapping.preset.cmdline(),
+      sources = {
+        { name = "buffer" },
+      },
+    })
+    cmp.setup.cmdline(":", {
+      mapping = cmp.mapping.preset.cmdline(),
+      sources = cmp.config.sources({
+        { name = "path" },
+      }, {
+        { name = "cmdline" },
+      }),
     })
   end,
 }
