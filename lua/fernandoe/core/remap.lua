@@ -53,3 +53,10 @@ map("n", "<leader>rn", vim.lsp.buf.rename, "Smart rename")
 map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", "Go to definition")
 -- map("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", "List symbol references")
 map("n", "gr", "<cmd>Telescope lsp_references<CR>", "List symbol references")
+
+-- Increment/decrement numbers
+map("n", "+", "<C-a>", "Increment a number")
+map("n", "-", "<C-x>", "Decrement a number")
+
+--  Select all
+map("n", "<C-a>", "gg<S-v>G", "Select all")
