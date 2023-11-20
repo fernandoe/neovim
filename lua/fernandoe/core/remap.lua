@@ -24,6 +24,8 @@ local function map(m, k, v, desc, expr)
   vim.keymap.set(m, k, v, { silent = true, desc = desc, expr = expr })
 end
 
+map("n", "<leader>l", "<cmd>Lazy<CR>", "Lazy window")
+
 map("n", "<leader>h", "<cmd>nohlsearch<CR>", "Clear search highlights")
 
 -- Change 2 split windows from vert to horiz or horiz to vert
