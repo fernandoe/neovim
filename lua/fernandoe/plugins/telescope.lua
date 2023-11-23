@@ -7,8 +7,8 @@ return {
   config = function()
     local telescope = require("telescope")
     telescope.setup({})
-    -- TODO: figure out why this doesn't work
-    -- telescope.load_extension("fzf")
+
+    telescope.load_extension("fzf")
 
     local keymap = vim.keymap
     keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
