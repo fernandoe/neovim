@@ -1,5 +1,6 @@
 return {
   "https://github.com/kevinhwang91/nvim-ufo",
+  enabled = false,
   dependencies = {
     "https://github.com/kevinhwang91/promise-async",
     {

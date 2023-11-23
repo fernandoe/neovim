@@ -38,7 +38,7 @@ map("n", "<C-PageDown>", "<cmd>bnext<CR>")
 
 -- Navigation Tree
 -- map("n", "<C-f>", ":Neotree toggle<CR>")
-map("n", "<C-t>", ":Neotree toggle<CR>")
+-- map("n", "<C-t>", ":Neotree toggle<CR>")
 
 map("n", "<C-s>", "<cmd>w<CR>", "Save current buffer")
 map("i", "<C-s>", "<Esc><cmd>w<CR>", "Save current buffer")
@@ -52,9 +52,16 @@ map("n", "<leader>sh", "<C-w>s", "Split window horizontally")
 -- LSP
 map({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, "See available code actions")
 map("n", "<leader>rn", vim.lsp.buf.rename, "Smart rename")
-map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", "Go to definition")
+map("n", "K", vim.lsp.buf.hover, "Show hover info")
+map("n", "gd", vim.lsp.buf.definition, "Go to definition")
+map("n", "gt", vim.lsp.buf.type_definition, "Go to type definition")
+map("n", "gi", vim.lsp.buf.implementation, "Go to type definition")
 -- map("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", "List symbol references")
 map("n", "gr", "<cmd>Telescope lsp_references<CR>", "List symbol references")
+
+map("n", "[d", vim.diagnostic.goto_next, "Go to next issue")
+map("n", "]d", vim.diagnostic.goto_prev, "Go to previous issue")
+map("n", "<leader>dl", "<CMD>Telescope diagnostics<CR>", "List all issues")
 
 -- Increment/decrement numbers
 map("n", "+", "<C-a>", "Increment a number")

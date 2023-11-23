@@ -3,9 +3,18 @@ return {
   enabled = true,
   event = { "BufReadPre", "BufNewFile" },
   config = function()
-    require("lspconfig").lua_ls.setup({
+    local htmp_setup = {
+      filetypes = { "html", "htmldjango" },
+    }
+
+    local lua_ls_setup = {
+      on_attach = function()
+      end,
       settings = {
         Lua = {
+          runtime = {
+            version = "LuaJIT",
+          },
           diagnostics = {
             globals = { "vim" },
           },
@@ -17,7 +26,7 @@ return {
           },
         },
       },
-    })
+    }
 
     local lspconfig = require("lspconfig")
 
@@ -31,8 +40,8 @@ return {
 
     lspconfig.marksman.setup({})
 
-    lspconfig.html.setup({
-      filetypes = { "html", "htmldjango" },
-    })
+    lspconfig.html.setup(htmp_setup)
+
+    lspconfig.lua_ls.setup(lua_ls_setup)
   end,
 }
