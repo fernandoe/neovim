@@ -119,3 +119,4 @@
 | `<leader>,`      | Windows: Rename window                          |
 | `<leader>n`      | Windows: Cycle focus                            |
 | `<leader>&`      | Windows: Close focus                            |
+| `<leader>$`      | Rename session                                  |
