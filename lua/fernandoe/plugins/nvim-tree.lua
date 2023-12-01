@@ -4,12 +4,13 @@ return {
     "https://github.com/nvim-tree/nvim-web-devicons",
   },
   config = function()
-    local nvimtree = require("nvim-tree")
     -- disable netrw at the very start of your init.lua
-    -- vim.g.loaded_netrw = 1
+    vim.g.loaded_netrw = 1
     vim.g.loaded_netrwPlugin = 1
+    -- set termguicolors o enable highlight groups
     vim.opt.termguicolors = true
 
+    local nvimtree = require("nvim-tree")
     nvimtree.setup({
       sort_by = "case_sensitive",
       view = {
@@ -28,7 +29,6 @@ return {
       git = {
         ignore = false,
       },
-      ignore,
     })
 
     local keymap = vim.keymap
