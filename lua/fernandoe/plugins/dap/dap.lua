@@ -43,6 +43,7 @@ return {
 
         for _, language in ipairs({ "typescript", "javascript" }) do
             dap.configurations[language] = {
+                -- Debug single nodejs files
                 {
                     type = "pwa-node",
                     request = "launch",
@@ -51,6 +52,7 @@ return {
                     cwd = "${workspaceFolder}",
                     runtimeExecutable = "node",
                 },
+                -- Debug nodejs processes (make sure to add --inspect= when starting nodejs)
                 {
                     type = "pwa-node",
                     request = "attach",
@@ -58,14 +60,22 @@ return {
                     processId = require("dap.utils").pick_process,
                     cwd = "${workspaceFolder}",
                 },
+                -- Debug web applicaftions (client side)
+                {
+                    type = "pwa-chrome",
+                    request = "launch",
+                    name = "Launch & Debug Chrome",
+                    url = "http://localhost:3000",
+                    webRoot = "${workspaceFolder}",
+                }
             }
         end
 
         -- keys = {
-        vim.keymap.set("n", "<F7>", require("dap").step_into, { desc = "Step into" })
-        vim.keymap.set("n", "<F8>", require("dap").step_over, { desc = "Step over" })
-        vim.keymap.set("n", "<F9>", require("dap").continue, { desc = "Continue" })
-        vim.keymap.set("n", "<leader>b", require("dap").toggle_breakpoint, { desc = "Toggle breakpoint" })
+        vim.keymap.set("n", "<F7>", dap.step_into, { desc = "Step into" })
+        vim.keymap.set("n", "<F8>", dap.step_over, { desc = "Step over" })
+        vim.keymap.set("n", "<F9>", dap.continue, { desc = "Continue" })
+        vim.keymap.set("n", "<leader>b", dap.toggle_breakpoint, { desc = "Toggle breakpoint" })
 
         -- local dap = require("dap")
 
