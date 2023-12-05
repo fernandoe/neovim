@@ -1,6 +1,6 @@
 return {
   "https://github.com/hrsh7th/nvim-cmp",
-  enabled = false,
+  enabled = true,
   event = "InsertEnter",
   dependencies = {
     "https://github.com/hrsh7th/cmp-buffer",
