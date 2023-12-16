@@ -3,13 +3,24 @@ return {
   dependencies = {
     "https://github.com/nvim-tree/nvim-web-devicons",
     "https://github.com/jonahgoldwastaken/copilot-status.nvim",
+    "https://github.com/jonahgoldwastaken/copilot-status.nvim",
   },
   config = function()
     local lualine = require("lualine")
     local lazy_status = require("lazy.status") -- to configure lazy pending updates count
 
     local copilot_status = function()
-      return require("copilot_status").status_string()
+      local copilot_status = require("copilot_status")
+      local status_string = copilot_status.status_string()
+      return status_string
+    end
+
+    local copilot_color = function()
+      local color = "#ff0000"
+      if copilot_status == "idle" then
+          color = "#00ff00"
+      end
+      return color
     end
 
     -- configure lualine with modified theme
@@ -28,7 +39,7 @@ return {
           { "encoding" },
           { "fileformat" },
           { "filetype" },
-          { copilot_status },
+          { copilot_status, color = { fg = copilot_color } },
         },
       },
     })
