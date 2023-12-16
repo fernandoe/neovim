@@ -1,7 +1,33 @@
 return {
-    "https://github.com/github/copilot.vim",
-    config = function()
-        vim.g.copilot_no_tab_map = true
-        vim.g.copilot_assume_mapped = true
-    end
+  "https://github.com/zbirenbaum/copilot.lua",
+  cmd = "Copilot",
+  -- event = "InsertEnter",
+  -- opts = {
+  -- suggestion = { enabled = false },
+  -- panel = { enabled = false },
+  -- }cc
+  config = function()
+    require("copilot").setup({
+      panel = {
+        enabled = true,
+        auto_refresh = true,
+      },
+      suggestion = {
+        enabled = true,
+        auto_trigger = true,
+        debounce = 300,
+        accept = false, -- disable built-in keymapping
+      },
+    })
+
+    vim.keymap.set("i", "<Tab>", function()
+      if require("copilot.suggestion").is_visible() then
+        require("copilot.suggestion").accept()
+      else
+        vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Tab>", true, false, true), "n", false)
+      end
+    end, {
+      silent = true,
+    })
+  end,
 }
