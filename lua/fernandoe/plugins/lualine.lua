@@ -8,6 +8,10 @@ return {
     local lualine = require("lualine")
     local lazy_status = require("lazy.status") -- to configure lazy pending updates count
 
+    local neovim_logo = function()
+      return ""
+    end
+
     local copilot_status = function()
       return require("copilot_status").status_string()
     end
@@ -19,6 +23,10 @@ return {
         theme = "tokyonight",
       },
       sections = {
+        lualine_a = {
+          { neovim_logo },
+          { "mode" },
+        },
         lualine_x = {
           {
             lazy_status.updates,
