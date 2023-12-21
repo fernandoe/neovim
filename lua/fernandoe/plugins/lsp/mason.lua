@@ -1,16 +1,11 @@
 return {
-    "https://github.com/williamboman/mason.nvim",
-    enabled = true,
-    dependencies = {
+  "https://github.com/williamboman/mason.nvim",
+  enabled = true,
+  opts = {
+    ui = {
+      icons = {
+        enabled = true,
+      },
     },
-    config = function ()
-        local mason = require("mason")
-        mason.setup({
-            ui = {
-                icons = {
-                    enabled = true,
-                },
-            },
-        })
-    end
+  },
 }

@@ -3,7 +3,6 @@ return {
   dependencies = {
     "https://github.com/nvim-tree/nvim-web-devicons",
     "https://github.com/jonahgoldwastaken/copilot-status.nvim",
-    "https://github.com/jonahgoldwastaken/copilot-status.nvim",
   },
   config = function()
     local lualine = require("lualine")
