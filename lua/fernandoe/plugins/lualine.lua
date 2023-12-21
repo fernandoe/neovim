@@ -22,7 +22,7 @@ return {
     local copilot_color = function()
       local color = "#ff0000"
       if copilot_status == "idle" then
-          color = "#00ff00"
+        color = "#00ff00"
       end
       return color
     end
@@ -30,8 +30,8 @@ return {
     -- configure lualine with modified theme
     lualine.setup({
       options = {
-        -- theme = my_lualine_theme,
-        theme = "tokyonight",
+        -- theme = "tokyonight",
+        theme = "horizon",
       },
       sections = {
         lualine_a = {
