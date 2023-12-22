@@ -8,8 +8,7 @@ return {
     }
 
     local lua_ls_setup = {
-      on_attach = function()
-      end,
+      on_attach = function() end,
       settings = {
         Lua = {
           runtime = {
@@ -29,6 +28,8 @@ return {
     }
 
     local lspconfig = require("lspconfig")
+
+    lspconfig.gopls.setup({})
 
     lspconfig.tsserver.setup({})
 
