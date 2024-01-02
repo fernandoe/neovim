@@ -1,5 +1,5 @@
 return {
-    "https://github.com/lewis6991/gitsigns.nvim",
-    enable = true,
-    opts = {},
+  "https://github.com/lewis6991/gitsigns.nvim",
+  enabled = true,
+  opts = {},
 }

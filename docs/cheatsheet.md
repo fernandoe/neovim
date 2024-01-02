@@ -100,6 +100,13 @@
 | `<C-r>`           | Redo changes which were undone |
 
 
+## DAP
+
+| mappings          | Description                    |
+|-------------------|--------------------------------|
+| `<leader>b`       | Add/Remove break point         |
+
+
 ## tmux
 
 
