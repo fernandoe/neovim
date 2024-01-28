@@ -28,6 +28,9 @@ vim.opt.updatetime = 50
 
 vim.opt.timeoutlen = 300
 
+-- Needed for https://github.com/epwalsh/obsidian.nvim
+vim.opt.conceallevel = 1
+
 vim.g.mapleader = " "
 
 -- clipboard
