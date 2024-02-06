@@ -1,10 +1,12 @@
 return {
     "https://github.com/epwalsh/obsidian.nvim",
+    version = "*", -- recommended, use latest release instead of latest commit
     dependencies = {
         "https://github.com/nvim-lua/plenary.nvim",
     },
     opts = {
-        version = "*", -- recommended, use latest release instead of latest commit
+        -- TODO: dir should be set dynamically
+        dir = "~/workspace/github/fernandoe/second-brain",
         templates = {
             subdir = "templates",
         },

@@ -69,3 +69,7 @@ map("n", "-", "<C-x>", "Decrement a number")
 
 --  Select all
 map("n", "<C-a>", "gg<S-v>G", "Select all")
+
+-- Macros
+map("n", "Q", "@qj", "Run macro q and go down")
+map("x", "Q", ":norm @q<CR>", "Run macro q and go down")
