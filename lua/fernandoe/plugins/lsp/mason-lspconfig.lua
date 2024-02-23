@@ -21,6 +21,5 @@ return {
             "rubocop",
         },
         automatic_installation = true,
-        auto_install = true,
     },
 }
