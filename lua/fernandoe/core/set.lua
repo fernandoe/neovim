@@ -31,6 +31,14 @@ vim.opt.timeoutlen = 300
 -- Needed for https://github.com/epwalsh/obsidian.nvim
 vim.opt.conceallevel = 1
 
+-- Set fold settings
+-- These options were reccommended by nvim-ufo
+-- See: https://github.com/kevinhwang91/nvim-ufo#minimal-configuration
+vim.opt.foldcolumn = "1"
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99
+vim.opt.foldenable = true
+
 vim.g.mapleader = " "
 
 -- clipboard

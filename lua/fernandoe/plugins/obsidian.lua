@@ -1,5 +1,6 @@
 return {
     "https://github.com/epwalsh/obsidian.nvim",
+    enabled = false,
     version = "*", -- recommended, use latest release instead of latest commit
     dependencies = {
         "https://github.com/nvim-lua/plenary.nvim",

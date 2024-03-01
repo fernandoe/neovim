@@ -1,30 +1,8 @@
 return {
 
-    --         -- dap / debugging / debug
-    -- map("n", "<F5>", ":lua require'dap'.continue()<CR>")
-    -- map("n", "<F3>", ":lua require'dap'.step_over()<CR>")
-    -- map("n", "<F2>", ":lua require'dap'.step_into()<CR>")
-    -- map("n", "<F12>", ":lua require'dap'.step_out()<CR>")
-    -- map("n", "<leader>b", ":lua require'dap'.toggle_breakpoint()<CR>")
-    -- map("n", "<leader>B", ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>")
-    -- map("n", "<leader>lp", ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>")
-    -- map("n", "<leader>dr", ":lua require'dap'.repl.open()<CR>")
-    -- -- map("n", "<leader>dt", ":lua require'dap-go'.debug_test()<CR>")
-    -- map("n", "<leader>dt", ":lua require'dap-vscode-js'.debug_test()<CR>")
-    -- -- vim.keymap.set('n', '<F5>', require 'dap'.continue)
-    -- -- vim.keymap.set('n', '<F10>', require 'dap'.step_over)
-    -- -- vim.keymap.set('n', '<F11>', require 'dap'.step_into)
-    -- -- vim.keymap.set('n', '<F12>', require 'dap'.step_out)
-    -- -- vim.keymap.set('n', '<leader>b', require 'dap'.toggle_breakpoint)
-    --
-    --
     "https://github.com/mfussenegger/nvim-dap",
-    -- keys = {
-    --     { "<F7>", require("dap").step_into, desc = "Step into" },
-    --     { "<F8>", require("dap").step_over, desc = "Step over" },
-    --     { "<F9>", require("dap").continue, desc = "Continue" },
-    -- },
     config = function()
+
         -- Signs
         vim.fn.sign_define("DapBreakpoint", { text = "🛑", texthl = "", linehl = "", numhl = "" })
         vim.fn.sign_define("DapStopped", { text = "▶", texthl = "", linehl = "", numhl = "" })
@@ -67,7 +45,7 @@ return {
                     name = "Launch & Debug Chrome",
                     url = "http://localhost:3000",
                     webRoot = "${workspaceFolder}",
-                }
+                },
             }
         end
 
@@ -76,17 +54,41 @@ return {
         vim.keymap.set("n", "<F8>", dap.step_over, { desc = "Step over" })
         vim.keymap.set("n", "<F9>", dap.continue, { desc = "Continue" })
         vim.keymap.set("n", "<leader>b", dap.toggle_breakpoint, { desc = "Toggle breakpoint" })
-
-        -- local dap = require("dap")
-
-        -- Set keymaps to control the debugger
-        -- vim.keymap.set("n", "<F5>", require("dap").continue)
-        -- vim.keymap.set("n", "<F10>", require("dap").step_over)
-        -- vim.keymap.set("n", "<F11>", require("dap").step_into)
-        -- vim.keymap.set("n", "<F12>", require("dap").step_out)
-        -- vim.keymap.set("n", "<leader>b", require("dap").toggle_breakpoint)
-        -- vim.keymap.set("n", "<leader>B", function()
-        --     require("dap").set_breakpoint(vim.fn.input("Breakpoint condition: "))
-        -- end)
     end,
 }
+
+--         -- dap / debugging / debug
+-- map("n", "<F5>", ":lua require'dap'.continue()<CR>")
+-- map("n", "<F3>", ":lua require'dap'.step_over()<CR>")
+-- map("n", "<F2>", ":lua require'dap'.step_into()<CR>")
+-- map("n", "<F12>", ":lua require'dap'.step_out()<CR>")
+-- map("n", "<leader>b", ":lua require'dap'.toggle_breakpoint()<CR>")
+-- map("n", "<leader>B", ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>")
+-- map("n", "<leader>lp", ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>")
+-- map("n", "<leader>dr", ":lua require'dap'.repl.open()<CR>")
+-- -- map("n", "<leader>dt", ":lua require'dap-go'.debug_test()<CR>")
+-- map("n", "<leader>dt", ":lua require'dap-vscode-js'.debug_test()<CR>")
+-- -- vim.keymap.set('n', '<F5>', require 'dap'.continue)
+-- -- vim.keymap.set('n', '<F10>', require 'dap'.step_over)
+-- -- vim.keymap.set('n', '<F11>', require 'dap'.step_into)
+-- -- vim.keymap.set('n', '<F12>', require 'dap'.step_out)
+-- -- vim.keymap.set('n', '<leader>b', require 'dap'.toggle_breakpoint)
+--
+--
+
+-- local dap = require("dap")
+
+-- Set keymaps to control the debugger
+-- vim.keymap.set("n", "<F5>", require("dap").continue)
+-- vim.keymap.set("n", "<F10>", require("dap").step_over)
+-- vim.keymap.set("n", "<F11>", require("dap").step_into)
+-- vim.keymap.set("n", "<F12>", require("dap").step_out)
+-- vim.keymap.set("n", "<leader>b", require("dap").toggle_breakpoint)
+-- vim.keymap.set("n", "<leader>B", function()
+--     require("dap").set_breakpoint(vim.fn.input("Breakpoint condition: "))
+-- end)
+--     -- keys = {
+--     { "<F7>", require("dap").step_into, desc = "Step into" },
+--     { "<F8>", require("dap").step_over, desc = "Step over" },
+--     { "<F9>", require("dap").continue, desc = "Continue" },
+-- },
