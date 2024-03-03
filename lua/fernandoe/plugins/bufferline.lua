@@ -4,6 +4,7 @@ return {
         "https://github.com/nvim-tree/nvim-web-devicons",
     },
     version = "*",
+    event = "VeryLazy",
     opts = {
         options = {
             mode = "buffers",
