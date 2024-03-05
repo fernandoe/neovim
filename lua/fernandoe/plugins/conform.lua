@@ -5,6 +5,7 @@ return {
         "BufReadPre",
         "BufNewFile",
     },
+    enabled = false,
     config = function()
         local conform = require("conform")
 
@@ -14,7 +15,7 @@ return {
                 html = { "prettier" },
                 javascript = { "prettier" },
                 javascriptreact = { "prettier" },
-                json = { "prettier" },
+                -- json = { "prettier" },
                 lua = { "stylua" },
                 markdown = { "prettier" },
                 python = { "isort", "black" },

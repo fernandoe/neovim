@@ -28,8 +28,8 @@ vim.opt.updatetime = 50
 
 vim.opt.timeoutlen = 300
 
--- Needed for https://github.com/epwalsh/obsidian.nvim
-vim.opt.conceallevel = 1
+-- does not hide double quotes from json files
+vim.opt.conceallevel = 0
 
 -- Set fold settings
 -- These options were reccommended by nvim-ufo

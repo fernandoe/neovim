@@ -19,6 +19,19 @@ return {
             },
             renderer = {
                 group_empty = true,
+                icons = {
+                    show = {
+                        folder_arrow = false,
+                    },
+                    glyphs = {
+                        folder = {
+                            default = "",
+                            open = "",
+                            empty = "",
+                            empty_open = "",
+                        },
+                    },
+                },
             },
             filters = {
                 dotfiles = false,

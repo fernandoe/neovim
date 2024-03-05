@@ -22,13 +22,13 @@ local options = {
         show_headers = true,
         -- executables or functions for formatting response body [optional]
         -- set them to false if you want to disable them
-        formatters = {json = "jq", html = false}
+        formatters = { json = "jq", html = false },
         -- formatters = false ,
-            -- {
-            -- json = "jq",
-            -- html = function(body)
-            --     return vim.fn.system({ "tidy", "-i", "-q", "-" }, body)
-            -- end,
+        -- {
+        -- json = "jq",
+        -- html = function(body)
+        --     return vim.fn.system({ "tidy", "-i", "-q", "-" }, body)
+        -- end,
         -- },
     },
     -- Jump to request line on run
@@ -44,7 +44,7 @@ return {
         "https://github.com/nvim-lua/plenary.nvim",
     },
     ft = { "http", "rest" },
-    opts = options,
+    opts = {},
     config = function()
         vim.keymap.set("n", "<leader>r", "<Plug>RestNvim<CR>", { silent = true, desc = "Rest" })
         vim.keymap.set("n", "<leader>p", "<Plug>RestNvimPreview<CR>", { silent = true, desc = "Rest preview" })
