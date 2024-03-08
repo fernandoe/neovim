@@ -20,7 +20,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 -------------------------------------------------
 
 local function map(m, k, v, desc, expr)
-  vim.keymap.set(m, k, v, { silent = true, desc = desc, expr = expr })
+    vim.keymap.set(m, k, v, { silent = true, desc = desc, expr = expr })
 end
 
 map("n", "<leader>l", "<cmd>Lazy<CR>", "Lazy window")
@@ -72,3 +72,9 @@ map("n", "<C-a>", "gg<S-v>G", "Select all")
 -- Macros
 map("n", "Q", "@qj", "Run macro q and go down")
 map("x", "Q", ":norm @q<CR>", "Run macro q and go down")
+
+-- spectre
+map("n", "<leader>S", "<cmd>lua require('spectre').toggle()<CR>", "Toggle Spectre")
+map("n", "<leader>sw", "<cmd>lua require('spectre').open_visual({select_word=true})<CR>", "Search current word")
+map("v", "<leader>sw", '<esc><cmd>lua require("spectre").open_visual()<CR>', "Search current word")
+map("n", "<leader>sf", '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', "Search on current file")
