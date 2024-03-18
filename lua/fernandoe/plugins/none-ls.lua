@@ -37,7 +37,6 @@ return {
                         "$FILENAME",
                     },
                 }),
-                null_ls.builtins.diagnostics.biome,
             },
         })
 
