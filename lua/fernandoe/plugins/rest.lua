@@ -42,7 +42,9 @@ return {
     "https://github.com/rest-nvim/rest.nvim",
     dependencies = {
         "https://github.com/nvim-lua/plenary.nvim",
+        "https://github.com/vhyrro/luarocks.nvim",
     },
+    enabled = true,
     ft = { "http", "rest" },
     opts = {},
     config = function()
