@@ -57,6 +57,7 @@ map("n", "gt", vim.lsp.buf.type_definition, "Go to type definition")
 map("n", "gi", vim.lsp.buf.implementation, "Go to type definition")
 -- map("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", "List symbol references")
 map("n", "gr", "<cmd>Telescope lsp_references<CR>", "List symbol references")
+map("n", "<leader>mp", vim.lsp.buf.format, "Format file")
 
 map("n", "[d", vim.diagnostic.goto_next, "Go to next issue")
 map("n", "]d", vim.diagnostic.goto_prev, "Go to previous issue")

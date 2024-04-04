@@ -7,6 +7,7 @@ return {
         ensure_installed = {
             "ansiblels",
             "bashls",
+            "biome",
             "cssls",
             "docker_compose_language_service",
             "gopls",
@@ -14,11 +15,11 @@ return {
             "lua_ls",
             "marksman", -- Markdown
             "pyright",
+            "rubocop",
             "tailwindcss",
             "terraformls",
             "tflint",
             "tsserver",
-            "rubocop",
         },
         automatic_installation = true,
     },
