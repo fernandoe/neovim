@@ -60,7 +60,7 @@ return {
         --
         -- lspconfig.docker_compose_language_service.setup({})
         --
-        -- lspconfig.pyright.setup({})
+        lspconfig.pyright.setup({})
         --
         -- lspconfig.bashls.setup({})
         --
