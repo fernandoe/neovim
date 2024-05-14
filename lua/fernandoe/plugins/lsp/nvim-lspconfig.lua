@@ -1,9 +1,15 @@
 return {
     "https://github.com/neovim/nvim-lspconfig",
+    dependencies = {
+        "https://github.com/hrsh7th/cmp-nvim-lsp",
+    },
     enabled = true,
     event = { "BufReadPre", "BufNewFile" },
     config = function()
+        local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
         local htmp_setup = {
+            capabilities = capabilities,
             filetypes = { "html", "htmldjango", "ejs" },
         }
 
@@ -67,7 +73,14 @@ return {
         -- lspconfig.marksman.setup({})
         --
         lspconfig.html.setup(htmp_setup)
+        -- lspconfig.html.setup({})
         --
         -- lspconfig.lua_ls.setup(lua_ls_setup)
+        --
+        local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
+        for type, icon in pairs(signs) do
+            local hl = "DiagnosticSign" .. type
+            vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+        end
     end,
 }
