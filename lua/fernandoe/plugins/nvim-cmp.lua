@@ -38,8 +38,8 @@ return {
       -- sources for autocompletion
       sources = cmp.config.sources({
         { name = "nvim_lsp" },
-        { name = "buffer" },
         { name = "path" },
+        { name = "buffer" },
       }),
     })
 
