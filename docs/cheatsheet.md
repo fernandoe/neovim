@@ -9,6 +9,12 @@
 | `<leader>h` | Clear search highlights |
 
 
+### git - https://github.com/lewis6991/gitsigns.nvim
+
+| mappings     | Description   |
+|--------------|---------------|
+| `<leader>gp` | Show git diff |
+
 
 ### treesj - https://github.com/Wansmer/treesj
 
