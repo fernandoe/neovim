@@ -13,6 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   { import = "fernandoe.plugins" },
+  { import = "fernandoe.plugins.ai" },
   { import = "fernandoe.plugins.dap" },
   { import = "fernandoe.plugins.db" },
   { import = "fernandoe.plugins.file-system" },
