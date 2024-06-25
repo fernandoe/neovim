@@ -23,4 +23,4 @@ require("lazy").setup({
 
 -- vim.cmd('colorscheme darcula')
 -- vim.cmd([[colorscheme tokyonight-moon]])
-vim.cmd([[colorscheme catppuccin]]) -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+vim.cmd([[colorscheme catppuccin-mocha]]) -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
