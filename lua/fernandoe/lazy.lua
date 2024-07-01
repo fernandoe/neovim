@@ -13,6 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   { import = "fernandoe.plugins" },
+  { import = "fernandoe.plugins.ai" },
   { import = "fernandoe.plugins.dap" },
   { import = "fernandoe.plugins.db" },
   { import = "fernandoe.plugins.file-system" },
@@ -22,4 +23,4 @@ require("lazy").setup({
 
 -- vim.cmd('colorscheme darcula')
 -- vim.cmd([[colorscheme tokyonight-moon]])
-vim.cmd([[colorscheme catppuccin]]) -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+vim.cmd([[colorscheme catppuccin-mocha]]) -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha

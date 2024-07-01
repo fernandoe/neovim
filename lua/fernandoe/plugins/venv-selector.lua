@@ -1,5 +1,6 @@
 return {
   "https://github.com/linux-cultist/venv-selector.nvim",
+  enabled = false,
   dependencies = {
     "https://github.com/neovim/nvim-lspconfig",
     "https://github.com/nvim-telescope/telescope.nvim",

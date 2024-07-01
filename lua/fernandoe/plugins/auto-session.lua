@@ -1,5 +1,5 @@
 return {
   "https://github.com/rmagatti/auto-session",
-  enabled = true,
+  enabled = false,
   opts = {},
 }
