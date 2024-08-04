@@ -1,6 +1,6 @@
 return {
   "https://github.com/CopilotC-Nvim/CopilotChat.nvim",
-  enabled = true,
+  enabled = false,
   branch = "canary",
   dependencies = {
     "https://github.com/zbirenbaum/copilot.lua",
