@@ -18,7 +18,10 @@ require("lazy").setup({
   { import = "fernandoe.plugins.db" },
   { import = "fernandoe.plugins.file-system" },
   { import = "fernandoe.plugins.lsp" },
+  { import = "fernandoe.plugins.rest" },
+  { import = "fernandoe.plugins.tests" },
   { import = "fernandoe.plugins.themes" },
+  { import = "fernandoe.plugins.ui" },
 })
 
 -- vim.cmd('colorscheme darcula')
