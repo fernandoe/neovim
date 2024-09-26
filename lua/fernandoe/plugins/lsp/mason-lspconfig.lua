@@ -21,6 +21,7 @@ return {
       "terraformls",
       "tflint",
       "tsserver",
+      "yamlls", -- yaml files
     },
     automatic_installation = true,
   },
