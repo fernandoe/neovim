@@ -13,9 +13,10 @@ return {
 
                 -- javascript
                 null_ls.builtins.formatting.prettier.with({
+                    filetypes = { "javascript", "typescript", "javascriptreact", "typescriptreact" },
                     args = {
                         "--tab-width", 
-                        "4",
+                        "8",
                         "--use-tabs",
                         "false",
                         "--single-quote",
@@ -29,6 +30,13 @@ return {
                 -- lua
                 null_ls.builtins.formatting.stylua,
 
+                -- python
+                null_ls.builtins.formatting.black,
+                null_ls.builtins.formatting.isort,
+
+                -- yaml / yml files
+                -- null_ls.builtins.formatting.yamlfmt,
+
                 -- null_ls.builtins.formatting.prettier.with({
                 --     filetypes = { "javascript", "typescript", "javascriptreact", "typescriptreact" },
                 --     command = "prettier",
@@ -38,8 +46,6 @@ return {
                 --     },
                     -- adicionar um timeout maior
                 -- }),
-
-                -- null_ls .builtins.formatting.prettierd,
                 -- null_ls.builtins.formatting.prettier.with({
                 --     command = "prettier-eslint", -- Use 'prettier-eslint' ao invés de 'prettierd'
                 --     args = {
@@ -56,12 +62,8 @@ return {
                 --
                 -- null_ls.builtins.completion.spell,
                 --
-                null_ls.builtins.formatting.black,
-                null_ls.builtins.formatting.isort,
-                --
                 -- null_ls.builtins.diagnostics.rubocop,
                 -- null_ls.builtins.formatting.rubocop,
-
                 -- null_ls.builtins.formatting.biome,
                 -- null_ls.builtins.formatting.biome.with({
                 --     filetypes = {

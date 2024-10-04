@@ -20,7 +20,8 @@ return {
       "tailwindcss",
       "terraformls",
       "tflint",
-      "tsserver",
+      "ts_ls",
+      "yamlls", -- yaml files
     },
     automatic_installation = true,
   },
