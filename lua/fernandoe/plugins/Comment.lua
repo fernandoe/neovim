@@ -1,6 +1,6 @@
 return {
-  -- "https://github.com/numToStr/Comment.nvim",
-  -- event = { "BufReadPre", "BufNewFile" },
+  "https://github.com/numToStr/Comment.nvim",
+  event = { "BufReadPre", "BufNewFile" },
   opts = {
     ---Add a space b/w comment and the line
     padding = true,
