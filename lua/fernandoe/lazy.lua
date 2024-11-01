@@ -17,6 +17,7 @@ require("lazy").setup({
   { import = "fernandoe.plugins.dap" },
   { import = "fernandoe.plugins.db" },
   { import = "fernandoe.plugins.file-system" },
+  { import = "fernandoe.plugins.git" },
   { import = "fernandoe.plugins.lsp" },
   { import = "fernandoe.plugins.rest" },
   { import = "fernandoe.plugins.tests" },

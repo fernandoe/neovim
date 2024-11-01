@@ -14,25 +14,25 @@ return {
     nvimtree.setup({
       sort_by = "case_sensitive",
       view = {
-        width = 30,
-        relativenumber = true,
+        width = 40,
+        relativenumber = false,
       },
-      renderer = {
-        group_empty = true,
-        icons = {
-          show = {
-            folder_arrow = false,
-          },
-          glyphs = {
-            folder = {
-              default = "",
-              open = "",
-              empty = "",
-              empty_open = "",
-            },
-          },
-        },
-      },
+      -- renderer = {
+      --   group_empty = true,
+      --   icons = {
+      --     show = {
+      --       folder_arrow = false,
+      --     },
+      --     glyphs = {
+      --       folder = {
+      --         default = "",
+      --         open = "",
+      --         empty = "",
+      --         empty_open = "",
+      --       },
+      --     },
+      --   },
+      -- },
       filters = {
         dotfiles = false,
         custom = {

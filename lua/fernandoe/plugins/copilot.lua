@@ -1,11 +1,12 @@
 return {
   "https://github.com/zbirenbaum/copilot.lua",
+  enabled = true,
   cmd = "Copilot",
   -- event = "InsertEnter",
   -- opts = {
   -- suggestion = { enabled = false },
   -- panel = { enabled = false },
-  -- }cc
+  -- }
   config = function()
     require("copilot").setup({
       panel = {
