@@ -28,7 +28,7 @@ return {
                 require("none-ls.code_actions.eslint_d"),
 
                 -- lua
-                null_ls.builtins.formatting.stylua,
+                -- null_ls.builtins.formatting.stylua,
 
                 -- python
                 null_ls.builtins.formatting.black,
