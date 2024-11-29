@@ -68,7 +68,9 @@ return {
     --
     lspconfig.pyright.setup {}
     --
-    -- lspconfig.bashls.setup({})
+    lspconfig.bashls.setup({
+      filetypes = { "sh", "zsh", "bash" },
+    })
     --
     -- lspconfig.marksman.setup({})
     --
