@@ -1,6 +1,6 @@
 return {
   "https://github.com/yetone/avante.nvim",
-  enabled = true,
+  enabled = false,
   event = "VeryLazy",
   build = "make",
   dependencies = {
