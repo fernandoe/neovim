@@ -25,8 +25,8 @@ return {
           },
           workspace = {
             library = {
-              [vim.fn.expand("$VIMRUNTIME/lua")] = true,
-              [vim.fn.stdpath("config") .. "/lua"] = true,
+              [vim.fn.expand "$VIMRUNTIME/lua"] = true,
+              [vim.fn.stdpath "config" .. "/lua"] = true,
             },
           },
         },
@@ -42,7 +42,7 @@ return {
       vim.lsp.buf.execute_command(params)
     end
 
-    local lspconfig = require("lspconfig")
+    local lspconfig = require "lspconfig"
 
     -- lspconfig.eslint.setup({
     --   on_attach = function(client, bufnr)
@@ -55,30 +55,32 @@ return {
 
     -- lspconfig.gopls.setup({})
     --
-    lspconfig.ts_ls.setup({
+    lspconfig.ts_ls.setup {
       commands = {
         OrganizeImports = {
           organize_imports,
           description = "Organize Imports",
         },
       },
-    })
+    }
     --
     -- lspconfig.docker_compose_language_service.setup({})
     --
-    lspconfig.pyright.setup({})
+    lspconfig.pyright.setup {}
     --
-    -- lspconfig.bashls.setup({})
+    lspconfig.bashls.setup({
+      filetypes = { "sh", "zsh", "bash" },
+    })
     --
     -- lspconfig.marksman.setup({})
     --
     lspconfig.html.setup(htmp_setup)
     -- lspconfig.html.setup({})
     --
-    -- lspconfig.lua_ls.setup(lua_ls_setup)
+    lspconfig.lua_ls.setup(lua_ls_setup)
 
     -- yaml files
-    lspconfig.yamlls.setup({
+    lspconfig.yamlls.setup {
       settings = {
         yaml = {
           format = {
@@ -89,7 +91,7 @@ return {
           },
         },
       },
-    })
+    }
 
     local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
     for type, icon in pairs(signs) do

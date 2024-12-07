@@ -3,9 +3,12 @@ return {
   branch = "0.1.x",
   dependencies = {
     "https://github.com/nvim-lua/plenary.nvim",
+    "https://github.com/xiyaowong/telescope-emoji.nvim"
   },
   config = function()
     local telescope = require("telescope")
+    telescope.load_extension("emoji")
+
     telescope.setup({
       defaults = {
         file_ignore_patterns = {

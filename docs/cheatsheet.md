@@ -133,3 +133,24 @@
 | `<leader>n`      | Windows: Cycle focus                            |
 | `<leader>&`      | Windows: Close focus                            |
 | `<leader>$`      | Rename session                                  |
+
+
+## Avante - https://github.com/yetone/avante.nvim
+
+| Key        | Description                                  |
+|------------|----------------------------------------------|
+| <leader>aa | show sidebar                                 |
+| <leader>ar | refresh sidebar                              |
+| <leader>af | switch sidebar focus                         |
+| <leader>ae | edit selected blocks                         |
+| co         | choose ours                                  |
+| ct         | choose theirs                                |
+| ca         | choose all theirs                            |
+| c0         | choose none                                  |
+| cb         | choose both                                  |
+| cc         | choose cursor                                |
+| ]x         | move to previous conflict                    |
+| [x         | move to next conflict                        |
+| [[         | jump to previous codeblocks (results window) |
+| ]]         | jump to next codeblocks (results windows)    |
+

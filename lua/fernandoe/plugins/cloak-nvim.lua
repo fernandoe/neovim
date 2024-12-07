@@ -1,4 +1,6 @@
 return {
-    "https://github.com/laytan/cloak.nvim",
-    opts = {},
+  "https://github.com/laytan/cloak.nvim",
+  opts = {
+    cloak_character = '🔒'
+  },
 }
