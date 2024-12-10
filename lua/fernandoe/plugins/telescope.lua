@@ -3,7 +3,8 @@ return {
   branch = "0.1.x",
   dependencies = {
     "https://github.com/nvim-lua/plenary.nvim",
-    "https://github.com/xiyaowong/telescope-emoji.nvim"
+    "https://github.com/xiyaowong/telescope-emoji.nvim",
+    { "https://github.com/nvim-telescope/telescope-fzf-native.nvim", build = "make" },
   },
   config = function()
     local telescope = require("telescope")
@@ -36,5 +37,11 @@ return {
     keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Find buffers" })
     keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { desc = "Find tags" })
     keymap.set("n", "<leader>fl", "<cmd>Telescope resume<cr>", { desc = "Open last find window" })
+    keymap.set("n", "<leader>fn", function()
+      local opts = require("telescope.themes").get_ivy({
+        cwd = vim.fn.stdpath("config"),
+      })
+      require("telescope.builtin").find_files(opts)
+    end, { desc = "Open neovim configuration files" })
   end,
 }
