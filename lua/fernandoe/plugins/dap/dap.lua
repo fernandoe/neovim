@@ -4,6 +4,7 @@ return {
   dependencies = {
     {
       "https://github.com/microsoft/vscode-js-debug",
+      tag = "v1.96.0",
       build = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out",
     },
     {
