@@ -26,5 +26,8 @@ return {
 
     -- keys
     vim.keymap.set("n", "<leader>ui", require("dapui").toggle, { desc = "Toggle DAP UI" })
+    vim.keymap.set("n", "<leader>?", function()
+      dapui.eval(nil, { enter = true })
+    end, { desc = "Visual see the variable content" })
   end,
 }
