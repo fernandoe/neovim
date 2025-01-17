@@ -44,7 +44,7 @@ return {
     "https://github.com/nvim-lua/plenary.nvim",
     "https://github.com/vhyrro/luarocks.nvim",
   },
-  enabled = true,
+  enabled = false,
   ft = { "http", "rest" },
   opts = {},
   config = function()

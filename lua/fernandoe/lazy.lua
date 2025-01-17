@@ -20,6 +20,7 @@ require("lazy").setup({
   { import = "fernandoe.plugins.git" },
   { import = "fernandoe.plugins.lsp" },
   { import = "fernandoe.plugins.rest" },
+  { import = "fernandoe.plugins.telescope" },
   { import = "fernandoe.plugins.tests" },
   { import = "fernandoe.plugins.themes" },
   { import = "fernandoe.plugins.ui" },
