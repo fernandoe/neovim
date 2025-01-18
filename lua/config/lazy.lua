@@ -20,6 +20,7 @@ require("config.set")
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
+    { import = "plugins.editor" },
     { import = "plugins.lsp" },
     { import = "plugins.syntax" },
     { import = "plugins.themes" },
