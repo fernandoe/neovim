@@ -23,3 +23,8 @@ require("lazy").setup({
     { import = "plugins.themes" },
   },
 })
+
+-- vim.cmd('colorscheme darcula')
+-- vim.cmd([[colorscheme tokyonight-moon]])
+-- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+vim.cmd([[colorscheme catppuccin-macchiato]])
