@@ -1,0 +1,151 @@
+--- Startup times for process: Primary/TUI ---
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.000  000.000: --- NVIM STARTING ---
+000.086  000.086: event init
+000.421  000.335: early init
+005.227  004.805: locale set
+005.292  000.066: init first window
+009.453  004.161: inits 1
+009.458  000.005: window checked
+009.460  000.002: parsing arguments
+010.183  000.020  000.020: require('vim.shared')
+010.227  000.022  000.022: require('vim.inspect')
+010.251  000.019  000.019: require('vim._options')
+010.252  000.067  000.027: require('vim._editor')
+010.253  000.118  000.031: require('vim._init_packages')
+010.254  000.675: init lua interpreter
+013.256  003.002: --- NVIM STARTED ---
+
+--- Startup times for process: Embedded ---
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.000  000.000: --- NVIM STARTING ---
+000.074  000.074: event init
+000.168  000.094: early init
+000.412  000.244: locale set
+000.434  000.022: init first window
+000.631  000.197: inits 1
+000.641  000.010: window checked
+000.643  000.002: parsing arguments
+000.901  000.018  000.018: require('vim.shared')
+000.946  000.022  000.022: require('vim.inspect')
+000.970  000.019  000.019: require('vim._options')
+000.971  000.068  000.027: require('vim._editor')
+000.972  000.103  000.017: require('vim._init_packages')
+000.973  000.227: init lua interpreter
+006.840  005.867: expanding arguments
+006.854  000.013: inits 2
+007.035  000.181: init highlight
+007.042  000.007: waiting for UI
+007.161  000.119: done waiting for UI
+007.164  000.003: clear screen
+007.223  000.009  000.009: require('vim.keymap')
+007.830  000.662  000.653: require('vim._defaults')
+007.831  000.006: init default mappings & autocommands
+009.467  000.345  000.345: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/ftplugin.vim
+011.106  000.275  000.275: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/indent.vim
+013.174  000.895  000.895: require('config.set')
+017.487  004.311  004.311: require('lazy')
+017.511  000.014  000.014: require('ffi')
+017.595  000.066  000.066: require('vim.fs')
+018.174  000.558  000.558: require('vim.uri')
+018.181  000.669  000.045: require('vim.loader')
+031.987  013.790  013.790: require('lazy.stats')
+035.084  003.060  003.060: require('lazy.core.util')
+037.674  002.586  002.586: require('lazy.core.config')
+038.949  000.592  000.592: require('lazy.core.handler')
+056.578  016.440  016.440: require('lazy.pkg')
+056.584  017.122  000.682: require('lazy.core.meta')
+056.591  017.640  000.518: require('lazy.core.plugin')
+056.599  018.923  000.691: require('lazy.core.loader')
+057.924  000.837  000.837: require('lazy.core.fragments')
+070.635  000.754  000.754: require('lazy.core.handler.event')
+070.638  004.698  003.943: require('lazy.core.handler.ft')
+071.405  000.761  000.761: require('lazy.core.handler.keys')
+072.193  000.784  000.784: require('lazy.core.handler.cmd')
+073.467  000.906  000.906: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/filetype.lua
+076.265  002.114  002.114: require('catppuccin')
+083.847  001.011  001.011: require('catppuccin.lib.hashing')
+090.730  006.824  006.824: require('catppuccin.lib.compiler')
+091.383  000.648  000.648: require('catppuccin.lib.mapper')
+091.778  000.392  000.392: require('catppuccin.palettes')
+092.182  000.402  000.402: require('catppuccin.palettes.latte')
+093.186  000.529  000.529: require('catppuccin.lib.hsluv')
+093.189  000.991  000.462: require('catppuccin.utils.colors')
+093.638  000.439  000.439: require('catppuccin.groups.syntax')
+095.741  002.085  002.085: require('catppuccin.groups.editor')
+097.272  001.515  001.515: require('catppuccin.groups.integrations.neotree')
+098.326  000.410  000.410: require('catppuccin.groups.integrations.neogit')
+100.140  000.514  000.514: require('catppuccin.groups.integrations.gitsigns')
+100.773  000.480  000.480: require('catppuccin.groups.integrations.flash')
+101.801  000.807  000.807: require('catppuccin.groups.integrations.dashboard')
+102.338  000.451  000.451: require('catppuccin.groups.integrations.dap_ui')
+103.015  000.513  000.513: require('catppuccin.groups.integrations.dap')
+103.538  000.363  000.363: require('catppuccin.groups.integrations.cmp')
+104.529  000.863  000.863: require('catppuccin.groups.integrations.alpha')
+105.006  000.422  000.422: require('catppuccin.groups.integrations.mini')
+105.578  000.491  000.491: require('catppuccin.groups.integrations.indent_blankline')
+106.059  000.405  000.405: require('catppuccin.groups.integrations.dropbar')
+106.409  000.257  000.257: require('catppuccin.groups.integrations.illuminate')
+106.957  000.415  000.415: require('catppuccin.groups.integrations.native_lsp')
+109.188  002.083  002.083: require('catppuccin.groups.integrations.treesitter')
+111.295  000.426  000.426: require('vim.treesitter.language')
+111.764  000.467  000.467: require('vim.func')
+112.169  000.399  000.399: require('vim.func._memoize')
+112.211  001.913  000.622: require('vim.treesitter.query')
+112.984  000.772  000.772: require('vim.treesitter._range')
+112.999  003.232  000.547: require('vim.treesitter.languagetree')
+113.007  003.817  000.585: require('vim.treesitter')
+114.237  001.229  001.229: require('vim.treesitter.highlighter')
+115.087  000.688  000.688: require('catppuccin.groups.integrations.ufo')
+115.631  000.428  000.428: require('catppuccin.groups.integrations.telescope')
+116.032  000.322  000.322: require('catppuccin.groups.integrations.semantic_tokens')
+116.392  000.247  000.247: require('catppuccin.groups.integrations.treesitter_context')
+121.977  005.411  005.411: require('catppuccin.groups.integrations.render_markdown')
+122.769  000.585  000.585: require('catppuccin.groups.integrations.rainbow_delimiters')
+123.273  000.272  000.272: require('catppuccin.groups.integrations.markdown')
+123.997  000.332  000.332: require('catppuccin.groups.integrations.nvimtree')
+124.698  000.570  000.570: require('catppuccin.groups.terminal')
+127.968  000.473  000.473: require('catppuccin.palettes.frappe')
+133.069  000.448  000.448: require('catppuccin.palettes.mocha')
+138.730  000.370  000.370: require('catppuccin.palettes.macchiato')
+145.468  000.429  000.429: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/plugin/editorconfig.lua
+145.913  000.233  000.233: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/plugin/gzip.vim
+146.578  000.384  000.384: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/plugin/man.lua
+148.392  000.280  000.280: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim
+148.409  001.353  001.073: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/plugin/matchit.vim
+148.939  000.237  000.237: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/plugin/matchparen.vim
+149.401  000.279  000.279: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/plugin/netrwPlugin.vim
+150.250  000.350  000.350: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/plugin/osc52.lua
+156.461  000.188  000.188: sourcing /Users/fespindo/.local/share/nvim/rplugin.vim
+156.472  006.049  005.860: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/plugin/rplugin.vim
+157.141  000.197  000.197: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/plugin/shada.vim
+157.574  000.147  000.147: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/plugin/spellfile.vim
+157.886  000.074  000.074: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/plugin/tarPlugin.vim
+158.795  000.684  000.684: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/plugin/tohtml.lua
+159.024  000.044  000.044: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/plugin/tutor.vim
+159.390  000.124  000.124: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/plugin/zipPlugin.vim
+159.487  147.731  044.824: require('config.lazy')
+159.488  147.920  000.190: sourcing /Users/fespindo/.config/nvim/init.lua
+159.504  003.133: sourcing vimrc file(s)
+159.839  000.041  000.041: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/filetype.lua
+161.142  000.193  000.193: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/syntax/synload.vim
+161.194  000.894  000.701: sourcing /opt/homebrew/Cellar/neovim/0.10.3/share/nvim/runtime/syntax/syntax.vim
+161.204  000.764: inits 3
+163.527  002.323: reading ShaDa
+163.593  000.067: opening buffers
+163.604  000.011: BufEnter autocommands
+163.606  000.001: editing files in windows
+163.718  000.112: VimEnter autocommands
+163.732  000.014: UIEnter autocommands
+163.732  000.001: before starting main loop
+163.865  000.133: first screen update
+163.866  000.001: --- NVIM STARTED ---
+
