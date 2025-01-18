@@ -21,6 +21,7 @@ require("config.set")
 require("lazy").setup({
   spec = {
     { import = "plugins.editor" },
+    { import = "plugins.formatting" },
     { import = "plugins.lsp" },
     { import = "plugins.syntax" },
     { import = "plugins.themes" },
