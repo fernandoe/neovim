@@ -1,4 +1,5 @@
 {
+  "bufferline.nvim": { "branch": "main", "commit": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3" },
   "catppuccin": { "branch": "main", "commit": "4965db2d6155c25db4e8417465fc2703fdf4c2b7" },
   "conform.nvim": { "branch": "master", "commit": "363243c03102a531a8203311d4f2ae704c620d9b" },
   "copilot-status.nvim": { "branch": "main", "commit": "decbffa57732f3d257641aea1d5541dd4fe536f6" },
