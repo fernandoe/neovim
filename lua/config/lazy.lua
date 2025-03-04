@@ -22,6 +22,7 @@ require("lazy").setup({
   spec = {
     { import = "plugins.ai" },
     { import = "plugins.coding" },
+    { import = "plugins.dap" },
     { import = "plugins.editor" },
     { import = "plugins.formatting" },
     { import = "plugins.lsp" },

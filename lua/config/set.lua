@@ -18,6 +18,13 @@ vim.opt.splitright = true       -- Vertical split to the right
 vim.opt.splitbelow = true       -- Horizontal split to the bottom
 vim.opt.colorcolumn = "100"     -- Show vertical line to help on write code
 
+-- indent configuration
+vim.opt.autoindent = true    -- Mantém a indentação da linha anterior
+vim.opt.smartindent = false  -- Desative para evitar conflitos com Treesitter
+vim.opt.cindent = false      -- Desative para evitar conflitos
+vim.opt.tabstop = 2          -- Tamanho do tab
+vim.opt.shiftwidth = 2       -- Tamanho da indentação
+vim.opt.expandtab = true     -- Usa espaços em vez de tabs
 
 -- https://github.com/kevinhwang91/nvim-ufo
 vim.o.foldcolumn = '1' -- '0' is not bad
