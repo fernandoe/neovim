@@ -8,6 +8,7 @@ return {
   keys = {
     { "<leader>ff", "<cmd>Telescope find_files hidden=true no_ignore=true<cr>", desc = "Find files" },
     { "<leader>fs", "<cmd>Telescope live_grep<cr>", desc = "Find string in files" },
+    { "<leader>fl", "<cmd>Telescope resume<cr>", desc = "Open last find window" },
   },
   config = function()
     local telescope = require("telescope")
@@ -39,6 +40,5 @@ return {
     keymap.set("n", "<leader>fw", "<cmd>Telescope grep_string<cr>", { desc = "Find string in files" })
     keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Find buffers" })
     keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { desc = "Find tags" })
-    keymap.set("n", "<leader>fl", "<cmd>Telescope resume<cr>", { desc = "Open last find window" })
   end,
 }
