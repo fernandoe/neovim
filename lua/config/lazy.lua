@@ -36,3 +36,4 @@ require("lazy").setup({
 -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
 -- vim.cmd([[colorscheme catppuccin-macchiato]])
 vim.cmd([[colorscheme kanagawa]])
+

@@ -11,6 +11,7 @@ return {
     { "<leader>fl", "<cmd>Telescope resume<cr>", desc = "Open last find window" },
     { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Open Neovim help tags" },
     { "<leader>fk", "<cmd>Telescope keymaps<cr>", desc = "Lists normal mode keymappings" },
+    { "<leader><leader>", "<cmd>Telescope buffers<cr>", desc = "Lists open buffers" },
   },
   config = function()
     local telescope = require("telescope")
