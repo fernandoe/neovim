@@ -40,3 +40,6 @@ vim.opt.smartcase = true
 vim.opt.signcolumn = "yes"
 vim.opt.colorcolumn = "100"     -- Show vertical line to help on write code
 
+-- Minimal number of screen lines to keep above and below the cursor
+vim.opt.scrolloff = 5
+
