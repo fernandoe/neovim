@@ -37,3 +37,8 @@ require("lazy").setup({
 -- vim.cmd([[colorscheme catppuccin-macchiato]])
 vim.cmd([[colorscheme kanagawa]])
 
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    vim.cmd("ShowkeysToggle")
+  end,
+})
