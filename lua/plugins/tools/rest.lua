@@ -1,4 +1,4 @@
 return {
-    "https://github.com/rest-nvim/rest.nvim",
-    opts = {},
+  "https://github.com/rest-nvim/rest.nvim",
+  enabled = true,
 }
