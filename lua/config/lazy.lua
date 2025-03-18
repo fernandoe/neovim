@@ -28,6 +28,7 @@ require("lazy").setup({
     { import = "plugins.lsp" },
     { import = "plugins.syntax" },
     { import = "plugins.themes" },
+    { import = "plugins.tools" },
   },
 })
 

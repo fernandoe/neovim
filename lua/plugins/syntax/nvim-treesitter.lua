@@ -16,7 +16,6 @@ return {
         "gitignore",
         "html",
         "http",
-        "http",
         "javascript",
         "json5",
         "lua",
