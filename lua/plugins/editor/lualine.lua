@@ -39,7 +39,7 @@ return {
         },
         lualine_c = {
           { "filename" },
-          { "location" },
+          -- { "location" },
           {
             require("noice").api.statusline.mode.get,
             cond = require("noice").api.statusline.mode.has,
@@ -57,6 +57,8 @@ return {
           { "filetype" },
           { copilot_status, color = { fg = copilot_color } },
         },
+        -- lualine_y = {},
+        -- lualine_z = {},
       },
     })
   end,
