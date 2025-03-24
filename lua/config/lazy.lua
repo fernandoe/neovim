@@ -16,6 +16,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("config.set")
+require("config.keymaps")
 
 -- Setup lazy.nvim
 require("lazy").setup({
