@@ -44,5 +44,9 @@ return {
         },
       },
     })
+
+    lspconfig.terraformls.setup({
+      capabilities = capabilities,
+    })
   end,
 }
