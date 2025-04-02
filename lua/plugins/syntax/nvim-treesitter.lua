@@ -16,7 +16,6 @@ return {
         "gitignore",
         "html",
         "http",
-        "http",
         "javascript",
         "json5",
         "lua",
@@ -30,6 +29,15 @@ return {
         "yaml",
       },
       auto_install = true,
+      incremental_selection = {
+        enable = true,
+        keymaps = {
+          init_selection = "<Enter>", -- set to 'false' to disable one of the mappings
+          node_incremental = "<Enter>",
+          scope_incremental = false,
+          node_decremental = "<Backspace>",
+        },
+      },
     })
   end,
 }

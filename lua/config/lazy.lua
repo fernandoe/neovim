@@ -16,6 +16,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("config.set")
+require("config.keymaps")
 
 -- Setup lazy.nvim
 require("lazy").setup({
@@ -28,10 +29,18 @@ require("lazy").setup({
     { import = "plugins.lsp" },
     { import = "plugins.syntax" },
     { import = "plugins.themes" },
+    { import = "plugins.tools" },
   },
 })
 
 -- vim.cmd('colorscheme darcula')
 -- vim.cmd([[colorscheme tokyonight-moon]])
 -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
-vim.cmd([[colorscheme catppuccin-macchiato]])
+-- vim.cmd([[colorscheme catppuccin-macchiato]])
+vim.cmd([[colorscheme kanagawa]])
+
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    vim.cmd("ShowkeysToggle")
+  end,
+})
