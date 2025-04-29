@@ -48,5 +48,11 @@ return {
     lspconfig.terraformls.setup({
       capabilities = capabilities,
     })
+
+    lspconfig.marksman.setup({
+      capabilities = capabilities,
+      on_attach = function() end,
+      filetypes = { "markdown" },
+    })
   end,
 }
