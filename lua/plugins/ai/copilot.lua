@@ -1,6 +1,6 @@
 return {
   "https://github.com/zbirenbaum/copilot.lua",
-  enabled = true,
+  enabled = false,
   cmd = "Copilot",
   config = function()
     require("copilot").setup({
