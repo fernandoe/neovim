@@ -20,4 +20,7 @@ map("n", "[d", vim.diagnostic.goto_next, "Go to next issue")
 map("n", "]d", vim.diagnostic.goto_prev, "Go to previous issue")
 map("n", "<leader>dl", "<CMD>Telescope diagnostics<CR>", "List all issues")
 
+map("i", "jj", "<ESC>", "Exit the INSERT mode")
+map("i", "jk", "<ESC>", "Exit the INSERT mode")
+
 
