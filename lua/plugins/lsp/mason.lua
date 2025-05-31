@@ -3,6 +3,7 @@ return {
   enabled = true,
   opts = {
     ensure_installed = {
+      "stylua",
       "typescript-language-server",
     },
     ui = {

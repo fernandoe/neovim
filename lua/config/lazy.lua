@@ -35,9 +35,10 @@ require("lazy").setup({
 })
 
 -- vim.cmd('colorscheme darcula')
--- vim.cmd([[colorscheme tokyonight-moon]])
+-- colorscheme tokyonight-night, tokyonight-storm, tokyonight-day, tokyonight-moon
+vim.cmd([[colorscheme tokyonight-night]])
 -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
-vim.cmd([[colorscheme catppuccin-macchiato]])
+-- vim.cmd([[colorscheme catppuccin-macchiato]])
 -- vim.cmd([[colorscheme kanagawa]])
 
 vim.api.nvim_create_autocmd("VimEnter", {

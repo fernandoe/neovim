@@ -3,6 +3,7 @@ return {
   dependencies = {
     "https://github.com/kevinhwang91/promise-async",
   },
+  enabled = true,
   event = "BufReadPost",
   enabled = true,
   config = function()

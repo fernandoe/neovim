@@ -3,4 +3,5 @@ return {
   dependencies = {
     "https://github.com/preservim/vimux",
   },
+  enabled = true,
 }

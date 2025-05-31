@@ -1,9 +1,10 @@
 local function map(m, k, v, desc, expr)
-    vim.keymap.set(m, k, v, { silent = true, desc = desc, expr = expr })
+  vim.keymap.set(m, k, v, { silent = true, desc = desc, expr = expr })
 end
 
-vim.keymap.set("n", "gl", function() vim.diagnostic.open_float() end, { desc = "Open diagnostics float" })
-
+vim.keymap.set("n", "gl", function()
+  vim.diagnostic.open_float()
+end, { desc = "Open diagnostics float" })
 
 -- LSP
 map({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, "See available code actions")
@@ -23,4 +24,5 @@ map("n", "<leader>dl", "<CMD>Telescope diagnostics<CR>", "List all issues")
 map("i", "jj", "<ESC>", "Exit the INSERT mode")
 map("i", "jk", "<ESC>", "Exit the INSERT mode")
 
-
+-- map("n", "<C-/>", "gcc", "Comment or uncomment a line", false)
+map({ "n", "v" }, "<C-_>", "gcc", "Comment or uncomment a line", false)
