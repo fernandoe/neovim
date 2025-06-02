@@ -26,6 +26,7 @@ require("lazy").setup({
     { import = "plugins.dap" },
     { import = "plugins.editor" },
     { import = "plugins.formatting" },
+    { import = "plugins.git" },
     { import = "plugins.lsp" },
     { import = "plugins.syntax" },
     { import = "plugins.themes" },
@@ -34,13 +35,27 @@ require("lazy").setup({
 })
 
 -- vim.cmd('colorscheme darcula')
--- vim.cmd([[colorscheme tokyonight-moon]])
+-- colorscheme tokyonight-night, tokyonight-storm, tokyonight-day, tokyonight-moon
+vim.cmd([[colorscheme tokyonight-night]])
 -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
 -- vim.cmd([[colorscheme catppuccin-macchiato]])
-vim.cmd([[colorscheme kanagawa]])
+-- vim.cmd([[colorscheme kanagawa]])
 
 vim.api.nvim_create_autocmd("VimEnter", {
   callback = function()
     vim.cmd("ShowkeysToggle")
+  end,
+})
+
+vim.api.nvim_create_autocmd({ "VimEnter" }, {
+  nested = true,
+  callback = function()
+    vim.cmd.colorscheme(vim.g.SCHEME)
+  end,
+})
+
+vim.api.nvim_create_autocmd({ "Colorscheme" }, {
+  callback = function(params)
+    vim.g.SCHEME = params.match
   end,
 })

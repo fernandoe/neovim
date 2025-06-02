@@ -1,11 +1,18 @@
 return {
   "https://github.com/hrsh7th/nvim-cmp",
+  dependencies = {
+    "https://github.com/onsails/lspkind.nvim",
+  },
   enabled = true,
   event = "InsertEnter",
-  dependencies = {},
   config = function()
     local cmp = require("cmp")
+    local lspkind = require("lspkind")
     cmp.setup({
+      window = {
+        completion = cmp.config.window.bordered(),
+        documentation = cmp.config.window.bordered(),
+      },
       mapping = {
         -- Ativa o autocompletar
         ["<C-Space>"] = cmp.mapping.complete(),
@@ -18,6 +25,24 @@ return {
       sources = {
         { name = "nvim_lsp" }, -- Fonte do LSP
         { name = "path" },
+      },
+      {
+        { name = "buffer" },
+      },
+      formatting = {
+        format = lspkind.cmp_format({
+          mode = "symbol",
+          maxwidth = {
+            menu = 50,
+            abbr = 50,
+          },
+          ellipsis_char = "...",
+          show_labelDetails = true,
+
+          before = function(entry, vim_item)
+            return vim_item
+          end,
+        }),
       },
     })
   end,

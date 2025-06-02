@@ -30,7 +30,8 @@ return {
     lualine.setup({
       options = {
         -- theme = "horizon",
-        theme = "gruvbox_dark",
+        -- theme = "gruvbox_dark",
+        theme = "tokyonight-night",
       },
       sections = {
         lualine_a = {
