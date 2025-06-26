@@ -26,3 +26,8 @@ map("i", "jk", "<ESC>", "Exit the INSERT mode")
 
 -- map("n", "<C-/>", "gcc", "Comment or uncomment a line", false)
 map({ "n", "v" }, "<C-_>", "gcc", "Comment or uncomment a line", false)
+
+-- Save buffer
+map("n", "<C-s>", "<cmd>w<CR>", "Save current buffer")
+map("i", "<C-s>", "<Esc><cmd>w<CR>", "Save current buffer")
+
