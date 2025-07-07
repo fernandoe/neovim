@@ -26,6 +26,7 @@ return {
         file_ignore_patterns = {
           ".DS_Store",
           "^.git/",
+          "^.npm/",
           "^node_modules/",
           "__pycache__",
         },

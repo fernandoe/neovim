@@ -54,5 +54,9 @@ return {
       on_attach = function() end,
       filetypes = { "markdown" },
     })
+
+    lspconfig.dartls.setup({
+      cmd = { "dart", "language-server", "--protocol=lsp" },
+    })
   end,
 }
