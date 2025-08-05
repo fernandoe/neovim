@@ -20,9 +20,10 @@ return {
 
     local conform = require("conform")
     conform.setup({
+      -- https://github.com/stevearc/conform.nvim?tab=readme-ov-file#formatters
       formatters_by_ft = {
         lua = { "stylua" },
-        python = { "ruff_organize_imports", "isort", "black" },
+        python = { "autoflake", "isort", "black" },
         javascript = { "prettierd", "prettier", stop_after_first = true },
       },
       format_on_save = {

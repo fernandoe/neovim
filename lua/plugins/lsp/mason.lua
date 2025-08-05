@@ -3,10 +3,10 @@ return {
   enabled = true,
   opts = {
     ensure_installed = {
+      "autoflake",
       "black",
       "isort",
       "pyright",
-      "ruff",
       "stylua",
       "typescript-language-server",
     },
