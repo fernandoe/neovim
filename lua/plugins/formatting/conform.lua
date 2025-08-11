@@ -6,9 +6,9 @@ return {
       "<leader>mp",
       function()
         require("conform").format({
-          async = false,
           lsp_fallback = true,
-          timeout_ms = 1000,
+          async = false,
+          timeout_ms = 2000,
         })
       end,
       mode = { "n", "v" },
@@ -16,13 +16,21 @@ return {
     },
   },
   config = function()
+    vim.g.conform_log_level = "debug"
+
     local conform = require("conform")
     conform.setup({
+      -- https://github.com/stevearc/conform.nvim?tab=readme-ov-file#formatters
       formatters_by_ft = {
         lua = { "stylua" },
-        python = { "isort", "black" },
+        python = { "autoflake", "isort", "black" },
         javascript = { "prettierd", "prettier", stop_after_first = true },
       },
+      format_on_save = {
+        lsp_fallback = true,
+        async = false,
+        timeout_ms = 2000,
+      }
     })
   end,
 }
