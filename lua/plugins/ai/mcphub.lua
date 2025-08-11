@@ -10,5 +10,5 @@ return {
     require("mcphub").setup({
       use_bundled_binary = true,
     })
-  end
+  end,
 }
