@@ -25,6 +25,7 @@ return {
         lua = { "stylua" },
         python = { "autoflake", "isort", "black" },
         javascript = { "prettierd", "prettier", stop_after_first = true },
+        json = { "prettier" },
       },
       format_on_save = {
         lsp_fallback = true,
