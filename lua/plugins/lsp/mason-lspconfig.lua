@@ -3,6 +3,7 @@ return {
   event = "BufReadPre",
   dependencies = {
     "https://github.com/williamboman/mason.nvim",
+    "https://github.com/neovim/nvim-lspconfig",
   },
   opts = {
     ensure_installed = {
